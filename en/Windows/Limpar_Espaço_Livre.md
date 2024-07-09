@@ -1,16 +1,16 @@
-# Como Limpar Espaço Livre no Disco de Forma Segura
+# How to Safely Clear Free Disk Space
 
-Para limpar de forma segura o espaço livre no disco, você pode usar o comando `cipher /w` no Prompt de Comando do Windows. Este comando sobrescreve o espaço livre no disco com zeros, tornando mais difícil a recuperação de dados por software de recuperação convencional.
+To safely wipe free disk space, you can use the `cipher /w` command in the Windows Command Prompt. This command overwrites free disk space with zeros, making data recovery by conventional recovery software more difficult.
 
-## Passos para Limpar Espaço Livre no Disco:
+## Steps to Clear Free Disk Space:
 
-### 1. Abrir o Prompt de Comando como Administrador
+### 1. Open Command Prompt as Administrator
 
-Abra o Prompt de Comando como administrador. Você pode fazer isso clicando com o botão direito do mouse no menu Iniciar e selecionando "Prompt de Comando (Admin)".
+Open Command Prompt as administrator. You can do this by right-clicking the Start menu and selecting "Command Prompt (Admin)".
 
-### 2. Executar o Comando `cipher /w`
+### 2. Run the `cipher /w` Command
 
-Digite o seguinte comando no Prompt de Comando e pressione Enter para iniciar o processo de limpeza:
+Type the following command in Command Prompt and press Enter to begin the cleanup process:
 
 ```cmd
 cipher /w:C:\
