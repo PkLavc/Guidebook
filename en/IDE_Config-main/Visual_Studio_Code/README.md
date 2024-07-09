@@ -1,15 +1,15 @@
 <!-- *************************************************java.json**************************************************** -->
 # java.json 
 
-Adiciona automaticamente, via snippets, um método `main` com um parâmetro `String[] args` ao digitar 'main' e pressionar Tab.
+Automatically adds a `main` method with a `String[] args` parameter via snippets when typing 'main' and pressing Tab.
 
-## Como configurar snippets no VS Code
+## How to Configure Snippets in VS Code
 
-Siga os passos abaixo para adicionar ou modificar os snippets de Java no Visual Studio Code:
+Follow the steps below to add or modify Java snippets in Visual Studio Code:
 
-1. Vá para **File** > **Preferences** > **Configure User Snippets**.
-2. Selecione a linguagem **Java** para começar a editar o arquivo de snippets específico dessa linguagem.
-3. Adicione o código ao seu arquivo. 
+1. Go to **File** > **Preferences** > **Configure User Snippets**.
+2. Select the **Java** language to begin editing the specific snippet file for this language.
+3. Add the code snippet to your file.
 
 <!-- ************************************************** Bar ***************************************************** -->
 
@@ -18,54 +18,52 @@ Siga os passos abaixo para adicionar ou modificar os snippets de Java no Visual 
 <!-- *************************************************settings.json**************************************************** -->
 # settings.json
 
-Configuração do arquivo `settings.json` para personalizar o ambiente de desenvolvimento, aparência e comportamento de várias extensões, como o Code Runner.
+Configuration of the `settings.json` file to customize the development environment, appearance, and behavior of various extensions such as Code Runner.
 
-## Como começar
+## Getting Started
 
-Para abrir o arquivo `settings.json` no Visual Studio Code:
+To open the `settings.json` file in Visual Studio Code:
 
-1. Vá para **Manage** > **Settings** > **Open Settings (JSON)**.
+1. Go to **Manage** > **Settings** > **Open Settings (JSON)**.
 
-## Configuração Detalhada
+## Detailed Configuration
 
-### Tema da Interface do Usuário
+### User Interface Theme
 
 - `"workbench.colorTheme": "Default Dark Modern"`
-  - Define o tema de cores para a interface do usuário do VS Code. "Default Dark Modern" é o tema de cores aplicado, modificando a aparência visual do editor, painéis, barra de status e outros elementos da UI para esse tema escuro.
+  - Sets the color theme for the VS Code user interface. "Default Dark Modern" is applied, modifying the visual appearance of the editor, panels, status bar, and other UI elements to this dark theme.
 
-### Comportamento do Explorador de Arquivos
+### File Explorer Behavior
 
 - `"explorer.compactFolders": false`
-  - Controla se o Explorador de Arquivos deve compactar pastas que contêm apenas uma subpasta em uma única linha. Definir isso como `false` significa que cada pasta e subpasta é exibida em sua própria linha, facilitando a visualização da estrutura de diretórios.
+  - Controls whether the File Explorer should compact folders that contain only one subfolder into a single line. Setting this to `false` means each folder and subfolder is displayed on its own line, making the directory structure easier to view.
 
-### Tema de Ícones
+### Icon Theme
 
 - `"workbench.iconTheme": "material-icon-theme"`
-  - Define o tema de ícones para o Explorador de Arquivos no Visual Studio Code. O "material-icon-theme" fornece um conjunto de ícones inspirados no design Material, alterando os ícones de arquivos e pastas para melhorar a navegação visual e a intuitividade.
+  - Sets the icon theme for the File Explorer in Visual Studio Code. The "material-icon-theme" provides a set of icons inspired by Material Design, improving visual navigation and intuitiveness.
 
-### Configurações de Execução de Código
+### Code Execution Settings
 
 - `"code-runner.executorMap":`
-  - Uma configuração específica para a extensão Code Runner que permite definir comandos personalizados para a execução de código em diferentes linguagens de programação.
+  - A specific configuration for the Code Runner extension that allows defining custom commands for executing code in different programming languages.
     - `"python": "clear ; python -u"`
-      - Especifica o comando para executar código Python. `clear` limpa o terminal antes de executar o script, e `python -u` executa o script Python em modo não bufferizado, garantindo que as saídas sejam exibidas prontamente.
+      - Specifies the command to execute Python code. `clear` clears the terminal before running the script, and `python -u` runs the Python script in unbuffered mode, ensuring outputs are promptly displayed.
     - `"java": "clear && javac $fileName && java $fileNameWithoutExt"`
-      - Para Java, o comando limpa o terminal (`clear`), compila o arquivo Java (`javac $fileName`), e executa o código compilado (`java $fileNameWithoutExt`). `$fileName` representa o nome atual do arquivo, e `$fileNameWithoutExt` é o nome do arquivo sem sua extensão.
+      - For Java, the command clears the terminal (`clear`), compiles the Java file (`javac $fileName`), and runs the compiled code (`java $fileNameWithoutExt`). `$fileName` represents the current file name, and `$fileNameWithoutExt` is the file name without its extension.
 
-### Executar no Terminal Integrado
+### Run in Integrated Terminal
 
 - `"code-runner.runInTerminal": true`
-  - Esta configuração permite que o Code Runner execute o código diretamente no terminal integrado do VS Code, em vez de usar o painel de saída padrão na parte inferior. Isso é benéfico para programas que requerem interação durante a execução ou que se beneficiam de um ambiente de terminal completo.
+  - This setting allows Code Runner to execute code directly in VS Code's integrated terminal instead of using the default output panel at the bottom. This is beneficial for programs that require interaction during execution or benefit from a full terminal environment.
 
-### Ignorar Seleção ao Executar
+### Ignore Selection When Running
 
 - `"code-runner.ignoreSelection": true`
-  - Quando ativado, o Code Runner executará sempre o arquivo inteiro, independente de qualquer seleção. Se definido como `false`, o Code Runner tentaria executar apenas a parte do código selecionada.
+  - When enabled, Code Runner will always execute the entire file regardless of any selection. If set to `false`, Code Runner would attempt to execute only the selected code portion.
     
 <!-- ************************************************** Bar ***************************************************** -->
 
   <img src="https://github.com/PkLavc/PkLavc/blob/94f67aca0f96f0e9cef748c2c27877c02586f77d/resources/Rainbow.gif" width="100%">
   
 <!-- ****************************************************************************************************************** -->
-
-
