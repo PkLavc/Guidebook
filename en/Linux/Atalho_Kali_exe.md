@@ -1,20 +1,20 @@
-# Como Criar um Atalho no Kali Linux para Executar um Comando
+# How to Create a Shortcut in Kali Linux to Execute a Command
 
-Para criar um atalho no Kali Linux que execute um comando específico, você pode usar um comando `sh -c`. Este comando permite que você execute uma sequência de comandos diretamente no terminal.
+To create a shortcut in Kali Linux that executes a specific command, you can use the `sh -c` command. This command allows you to run a sequence of commands directly in the terminal.
 
-## Exemplo de Atalho para Executar um Jogo
+## Example Shortcut to Execute a Game
 
-Suponha que você deseja criar um atalho para executar o jogo "Grand Theft Auto", que está localizado em `/home/pc/Documentos/Jogos/GrandTheftAuto/`.
+Suppose you want to create a shortcut to run the game "Grand Theft Auto," which is located in `/home/pc/Documents/Games/GrandTheftAuto/`.
 
-### Passos para Criar o Atalho:
+### Steps to Create the Shortcut:
 
-1. **Abrir o Terminal:**
+1. **Open the Terminal:**
 
-   Abra o terminal no Kali Linux.
+   Open the terminal in Kali Linux.
 
-2. **Criar o Atalho Usando `sh -c`:**
+2. **Create the Shortcut Using `sh -c`:**
 
-   Use o seguinte comando `sh -c` para criar um atalho que navega até o diretório do jogo e executa o arquivo executável:
+   Use the following `sh -c` command to create a shortcut that navigates to the game directory and executes the executable file:
 
    ```bash
-   sh -c 'cd "/home/pc/Documentos/Jogos/GrandTheftAuto/" && GrandTheftAuto.exe'
+   sh -c 'cd "/home/pc/Documents/Games/GrandTheftAuto/" && ./GrandTheftAuto'
